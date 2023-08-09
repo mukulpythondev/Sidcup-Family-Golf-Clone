@@ -81,7 +81,9 @@ gsap.from(".card",{
     scroller:"body",
     start:"top 70%",
     end:"top 65%",
-    scrub:1
+    scrub:1,
+    onEnter: () => console.log("Entering card section"), // Debug message
+    onLeaveBack: () => console.log("Leaving card section")
   }
 })
 
